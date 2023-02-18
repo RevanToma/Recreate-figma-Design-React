@@ -34,20 +34,33 @@ export const NavImgContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: auto;
+  position: relative;
 
   img {
     margin: 0 32px;
     border: 2px solid transparent;
-    &:nth-child(2) {
+    &:nth-child(3) {
       &:hover {
         border: 2px solid #ff7e1b;
         border-radius: 50%;
       }
     }
-    &:nth-child(1) {
+    &:nth-child(2) {
       &:hover {
         filter: brightness(0.4);
       }
     }
   }
+`;
+
+export const ItemCount = styled.span`
+  position: absolute;
+  transform: translate(270%, -60%);
+  color: #ffffff;
+  background: #ff7e1b;
+  padding: 2px 5px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 10px;
+  z-index: 9999;
 `;

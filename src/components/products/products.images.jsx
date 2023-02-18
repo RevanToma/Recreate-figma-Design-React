@@ -1,5 +1,8 @@
 import { ProductImgContainer } from "./products.images.styles";
+import ImageModal from "../modal-popup/modal-popup.component";
+import { useState } from "react";
 const ProductsImages = ({ productData }) => {
+  const { isModalOpen, setIsModalOpen } = useState(false);
   return (
     <ProductImgContainer>
       <div>

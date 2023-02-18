@@ -21,4 +21,7 @@ export const CartItemDetails = styled.div`
   }
 `;
 
-export const CartItemName = styled.span``;
+export const TotalCartCost = styled.span`
+  font-weight: 700 !important;
+  color: #1d2026 !important;
+`;

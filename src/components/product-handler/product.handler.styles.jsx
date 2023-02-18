@@ -78,7 +78,8 @@ export const AddToCartHandle = styled.div`
 
   span {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    user-select: none;
 
     &:hover {
       color: #ffab6a;
@@ -87,5 +88,6 @@ export const AddToCartHandle = styled.div`
   p {
     color: black;
     font-weight: 700;
+    user-select: none;
   }
 `;

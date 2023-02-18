@@ -1,6 +1,6 @@
 import Button from "../button/button.component";
 import productCart from "../../assets/productCart.svg";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/cart.context";
 import {
   ProductHandlerContainer,
@@ -16,9 +16,22 @@ import {
 const ProductHandler = ({ productData }) => {
   const { company, description, title, originalPrice, discountPrice } =
     productData;
-  const { addItemsToCart, removeItemFromCart } = useContext(CartContext);
-  const addItemHandler = () => addItemsToCart(productData);
-  const removeCartItemHandler = () => removeItemFromCart(productData);
+  const { addItemsToCart } = useContext(CartContext);
+  const [cartCount, setCartCount] = useState(0);
+
+  const addItemHandler = () => {
+    if (!cartCount) return;
+
+    const itemsToAdd = { ...productData, quantity: cartCount };
+    addItemsToCart(itemsToAdd);
+  };
+
+  const incrementHandler = () => setCartCount(cartCount + 1);
+  const decrementHandler = () => {
+    if (cartCount === 0) return;
+
+    setCartCount(cartCount - 1);
+  };
 
   return (
     <ProductHandlerContainer>
@@ -34,11 +47,13 @@ const ProductHandler = ({ productData }) => {
       </PriceContainer>
       <AddToCartContainer>
         <AddToCartHandle>
-          <span onClick={removeCartItemHandler}>-</span>
-          <p>0</p>
-          <span onClick={addItemHandler}>+</span>
+          <span onClick={decrementHandler}>-</span>
+          <p>{cartCount}</p>
+          <span onClick={incrementHandler}>+</span>
         </AddToCartHandle>
-        <Button icon={productCart}>Add to cart</Button>
+        <Button icon={productCart} callback={addItemHandler}>
+          Add to cart
+        </Button>
       </AddToCartContainer>
     </ProductHandlerContainer>
   );

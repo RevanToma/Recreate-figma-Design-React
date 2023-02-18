@@ -2,16 +2,17 @@ import {
   NavLinksContainer,
   NavLiContainer,
   NavImgContainer,
+  ItemCount,
 } from "./nav.component.styles";
 import logo from "../../assets/sneakers.svg";
 import { useContext } from "react";
 import { CartContext } from "../context/cart.context";
 import NavImg from "../../assets/Oval.svg";
-// import CartIcon from "../cart-icon/cart-icon.component";
+
 import CartIcon from "../../assets/Shape.svg";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 const Nav = () => {
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
+  const { isCartOpen, setIsCartOpen, cartCount } = useContext(CartContext);
   const openCartHandler = () => setIsCartOpen(!isCartOpen);
   return (
     <>
@@ -23,7 +24,9 @@ const Nav = () => {
           <li>Women</li>
           <li>Contact</li>
           <NavImgContainer>
+            <ItemCount>{cartCount}</ItemCount>
             <img src={CartIcon} onClick={openCartHandler} />
+
             <img src={NavImg} />
           </NavImgContainer>
           {isCartOpen && <CartDropdown />}
