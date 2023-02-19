@@ -1,9 +1,13 @@
+import ModalPopupHandler from "./modal-popup-handler/modal-popup-handler.component";
+import { ModalContainer, ModalItems } from "./modal-popup.styles";
 const ImageModal = ({ productData, callback }) => {
-  const { images, title } = productData;
+  const { images } = productData;
   return (
-    <div>
-      <img src={images} alt={title} />
-    </div>
+    <ModalContainer>
+      <ModalItems>
+        <ModalPopupHandler images={images} />
+      </ModalItems>
+    </ModalContainer>
   );
 };
 

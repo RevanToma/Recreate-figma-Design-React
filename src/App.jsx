@@ -4,6 +4,7 @@ import ProductHandler from "./components/product-handler/product.handler.compone
 import ProductsImages from "./components/products/products.images";
 import { ProductData } from "./productData/productData";
 import { MainContainer } from "./App.styles.jsx";
+import ModalPopupHandler from "./components/modal-popup/modal-popup-handler/modal-popup-handler.component.jsx";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
       <MainContainer>
         <ProductsImages productData={ProductData} />
         <ProductHandler productData={ProductData} />
+        <ModalPopupHandler images={ProductData.images} />
       </MainContainer>
     </>
   );
