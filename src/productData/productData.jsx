@@ -1,7 +1,7 @@
 import largeShoeImg from "../assets/Rectangle.svg";
 import smallShoeImg1 from "../assets/Rectangle Copy.svg";
-import smallShoeImg2 from "../assets/Rectangle Copy 3.svg";
-import smallShoeImg3 from "../assets/Rectangle Copy 4.svg";
+import smallShoeImg2 from "../assets/Rectangle Copy 2.svg";
+import smallShoeImg3 from "../assets/Rectangle Copy 3.svg";
 import smallShoeImg4 from "../assets/Rectangle Copy 4.svg";
 
 export const ProductData = {

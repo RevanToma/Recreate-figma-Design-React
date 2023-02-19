@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ModalContainer = styled.div`
   position: absolute;
   z-index: 9999;
-  right: 25%;
-  top: 25%;
+  right: 35%;
+  top: 15%;
 `;
 
 export const ModalItems = styled.div`
@@ -14,8 +14,8 @@ export const ModalItems = styled.div`
 `;
 
 export const CloseModal = styled.img`
-  border: 1px solid black;
   position: absolute;
   top: 0;
   right: 0;
+  transform: translateY(-100%);
 `;

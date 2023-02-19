@@ -5,9 +5,9 @@ const ImageModal = ({ productData, callback }) => {
   const { images } = productData;
   return (
     <ModalContainer>
-      <ModalItems>
+      <div>
         <ModalPopupHandler images={images} />
-      </ModalItems>
+      </div>
       <CloseModal src={X} onClick={callback} alt="X" />
     </ModalContainer>
   );

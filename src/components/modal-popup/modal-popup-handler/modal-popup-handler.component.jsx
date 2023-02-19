@@ -1,11 +1,11 @@
 import { useState } from "react";
 import nextImg from "../../../assets/next.svg";
 import prevImg from "../../../assets/prev.svg";
+
 import {
-  PopUpContainer,
   FirstImg,
-  PopUpContainers,
   PopUpContainerArrows,
+  SmallImages,
 } from "./modal-popup-handler.styles";
 
 const ModalPopupHandler = ({ images }) => {
@@ -32,17 +32,21 @@ const ModalPopupHandler = ({ images }) => {
   return (
     <div>
       <div>
-        <img src={images[showCurrentImg]} alt="shoe" />
-        <img src={prevImg} onClick={showPrevImage} />
-        <img src={nextImg} onClick={showINextImage} />
+        <FirstImg>
+          <img src={images[showCurrentImg]} alt="shoe" />
+        </FirstImg>
+        <PopUpContainerArrows>
+          <img src={prevImg} onClick={showPrevImage} />
+          <img src={nextImg} onClick={showINextImage} />
+        </PopUpContainerArrows>
       </div>
-      <div>
+      <SmallImages>
         {images.map((image, idx) => (
           <div key={idx} onClick={() => showImage(idx)}>
             <img src={image} alt="shoe" />
           </div>
         ))}
-      </div>
+      </SmallImages>
     </div>
   );
 };
