@@ -1,5 +1,6 @@
 import ModalPopupHandler from "./modal-popup-handler/modal-popup-handler.component";
-import { ModalContainer, ModalItems } from "./modal-popup.styles";
+import { ModalContainer, ModalItems, CloseModal } from "./modal-popup.styles";
+import X from "../../assets/X.svg";
 const ImageModal = ({ productData, callback }) => {
   const { images } = productData;
   return (
@@ -7,6 +8,7 @@ const ImageModal = ({ productData, callback }) => {
       <ModalItems>
         <ModalPopupHandler images={images} />
       </ModalItems>
+      <CloseModal src={X} onClick={callback} alt="X" />
     </ModalContainer>
   );
 };

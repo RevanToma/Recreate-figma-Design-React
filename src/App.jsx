@@ -12,7 +12,6 @@ function App() {
       <MainContainer>
         <ProductsImages productData={ProductData} />
         <ProductHandler productData={ProductData} />
-        <ModalPopupHandler images={ProductData.images} />
       </MainContainer>
     </>
   );

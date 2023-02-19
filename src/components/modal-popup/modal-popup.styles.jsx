@@ -12,3 +12,10 @@ export const ModalItems = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const CloseModal = styled.img`
+  border: 1px solid black;
+  position: absolute;
+  top: 0;
+  right: 0;
+`;
