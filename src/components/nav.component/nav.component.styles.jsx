@@ -77,7 +77,8 @@ export const NavImgContainer = styled.div`
       }
       @media (max-width: 775px) {
         width: 20px;
-        margin-right: 22px !important;
+        margin-right: 24px !important;
+        margin-left: 22px !important;
       }
     }
   }
@@ -95,6 +96,6 @@ export const ItemCount = styled.span`
   z-index: 9999;
 
   @media (max-width: 775px) {
-    transform: translate(90%, -60%);
+    transform: translate(200%, -60%);
   }
 `;

@@ -137,7 +137,8 @@ Error generating stack: `+o.message+`
       }
       @media (max-width: 775px) {
         width: 20px;
-        margin-right: 22px !important;
+        margin-right: 24px !important;
+        margin-left: 22px !important;
       }
     }
   }
@@ -153,7 +154,7 @@ Error generating stack: `+o.message+`
   z-index: 9999;
 
   @media (max-width: 775px) {
-    transform: translate(90%, -60%);
+    transform: translate(200%, -60%);
   }
 `,Km="/Recreate-figma-Design-React/assets/sneakers-019dfa04.svg",fi=Re.createContext({cartItems:[],isCartOpen:!1,setIsCartOpen:()=>{},cartCount:0,clearCart:()=>{}}),Zm=(e,t)=>e.find(r=>r.id===t.id)?e.map(r=>r.id===t.id?{...r,quantity:r.quantity+t.quantity}:r):[...e,t],Jm=(e,t)=>e.filter(n=>n.id!==t.id),eg=({children:e})=>{const[t,n]=Re.useState([]),[r,i]=Re.useState(!1),[o,l]=Re.useState(0);Re.useEffect(()=>{const f=t.reduce((x,k)=>x+k.quantity,0);l(f)},[t]);const h={isCartOpen:r,setIsCartOpen:i,cartItems:t,addItemsToCart:f=>{n(Zm(t,f))},removeItemFromCart:f=>{n(Jm(t,f))},cartCount:o};return ae(fi.Provider,{value:h,children:e})},tg="/Recreate-figma-Design-React/assets/Oval-93cd68fe.svg",ng="/Recreate-figma-Design-React/assets/Shape-a3e5d918.svg",rg=Ie.div`
   position: absolute;
