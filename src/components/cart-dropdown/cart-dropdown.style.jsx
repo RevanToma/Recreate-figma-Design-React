@@ -16,6 +16,7 @@ export const CartDropdownContainer = styled.div`
 
   button {
     place-self: center;
+    width: 100%;
   }
 
   @media (max-width: 775px) {
@@ -32,7 +33,7 @@ export const CartEmptyMsg = styled.span`
 
 export const CartItems = styled.div`
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 20px;
 
   

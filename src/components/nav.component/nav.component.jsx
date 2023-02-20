@@ -24,7 +24,7 @@ const Nav = () => {
           <li>Women</li>
           <li>Contact</li>
           <NavImgContainer>
-            <ItemCount>{cartCount}</ItemCount>
+            {cartCount ? <ItemCount>{cartCount}</ItemCount> : ""}
             <img src={CartIcon} onClick={openCartHandler} />
 
             <img src={NavImg} />

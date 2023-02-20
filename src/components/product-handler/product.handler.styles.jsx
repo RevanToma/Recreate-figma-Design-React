@@ -89,7 +89,7 @@ export const AddToCartContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
 
-  margin-top: 32px;
+  margin-top: 27px;
 
   @media (max-width: 775px) {
     flex-direction: column;
@@ -127,7 +127,8 @@ export const AddToCartHandle = styled.div`
     user-select: none;
   }
   @media (max-width: 775px) {
-    width: 100%;
+    width: 90%;
     margin-right: 0;
+    margin-bottom: 16px;
   }
 `;
