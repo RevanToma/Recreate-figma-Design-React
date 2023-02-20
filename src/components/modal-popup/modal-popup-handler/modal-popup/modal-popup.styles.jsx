@@ -5,6 +5,10 @@ export const ModalContainer = styled.div`
   z-index: 99999;
   right: 35%;
   top: 15%;
+
+  @media (max-width: 775px) {
+    position: inherit;
+  }
 `;
 
 export const CloseModal = styled.img`

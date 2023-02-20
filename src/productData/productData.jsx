@@ -1,8 +1,8 @@
-import largeShoeImg from "../assets/Rectangle.svg";
-import smallShoeImg1 from "../assets/Rectangle Copy.svg";
-import smallShoeImg2 from "../assets/Rectangle Copy 2.svg";
-import smallShoeImg3 from "../assets/Rectangle Copy 3.svg";
-import smallShoeImg4 from "../assets/Rectangle Copy 4.svg";
+import largeShoeImg from "../assets/largShoe.svg";
+import smallShoeImg1 from "../assets/smallShoe1.svg";
+import smallShoeImg2 from "../assets/smallShoe2.svg";
+import smallShoeImg3 from "../assets/smallShoe3.svg";
+import smallShoeImg4 from "../assets/smallShoe4.svg";
 
 export const ProductData = {
   company: "Sneaker Company",

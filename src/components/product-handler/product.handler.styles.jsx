@@ -4,6 +4,25 @@ export const ProductHandlerContainer = styled.div`
   width: 445px;
   margin-left: 125px;
   align-self: center;
+
+  @media (max-width: 750px) {
+    width: 100%;
+    margin-left: 0;
+
+    h2 {
+      font-size: 35px;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 775px) {
+    p,
+    h2,
+    span {
+      margin: 0;
+      padding: 10px;
+    }
+  }
 `;
 
 export const CompanyPara = styled.p`
@@ -24,11 +43,21 @@ export const ProductDescription = styled.p`
   Line height: 26px;
   width: 445px;
   color: #69707d;
+
+  @media(max-width: 775px){
+    width: 100%;
+  }
   
 `;
 export const PriceContainer = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 775px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
 export const DiscountPrice = styled.span`
   font-weight: 700;
@@ -61,6 +90,13 @@ export const AddToCartContainer = styled.div`
   align-items: center;
 
   margin-top: 32px;
+
+  @media (max-width: 775px) {
+    flex-direction: column;
+    button {
+      width: 90%;
+    }
+  }
 `;
 
 export const AddToCartHandle = styled.div`
@@ -89,5 +125,9 @@ export const AddToCartHandle = styled.div`
     color: black;
     font-weight: 700;
     user-select: none;
+  }
+  @media (max-width: 775px) {
+    width: 100%;
+    margin-right: 0;
   }
 `;

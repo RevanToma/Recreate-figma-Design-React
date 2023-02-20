@@ -17,6 +17,10 @@ export const CartDropdownContainer = styled.div`
   button {
     place-self: center;
   }
+
+  @media (max-width: 775px) {
+    right: 15px;
+  }
 `;
 
 export const CartEmptyMsg = styled.span`
@@ -42,4 +46,12 @@ export const CartItems = styled.div`
   img {
     border-radius: 4px;
   }
+`;
+
+export const EmptyCartMsg = styled.span`
+  font-weight: 700;
+  font-size: 16px;
+  color: #69707d;
+  padding: 100px 80px;
+  text-align: center;
 `;

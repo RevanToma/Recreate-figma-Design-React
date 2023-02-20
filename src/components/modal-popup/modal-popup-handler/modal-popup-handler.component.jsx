@@ -6,6 +6,7 @@ import {
   FirstImg,
   PopUpContainerArrows,
   SmallImages,
+  MobileFirstImgContainer,
 } from "./modal-popup-handler.styles";
 
 const ModalPopupHandler = ({ images }) => {
@@ -30,7 +31,7 @@ const ModalPopupHandler = ({ images }) => {
   };
 
   return (
-    <div>
+    <MobileFirstImgContainer>
       <div>
         <FirstImg>
           <img src={images[showCurrentImg]} alt="shoe" />
@@ -47,7 +48,7 @@ const ModalPopupHandler = ({ images }) => {
           </div>
         ))}
       </SmallImages>
-    </div>
+    </MobileFirstImgContainer>
   );
 };
 export default ModalPopupHandler;

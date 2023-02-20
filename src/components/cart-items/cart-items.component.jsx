@@ -9,7 +9,7 @@ import { CartContext } from "../context/cart.context";
 
 const CartItem = ({ productData }) => {
   const { title, discountPrice, largeShoeImg, quantity } = productData;
-  const { removeItemFromCart, cartItems } = useContext(CartContext);
+  const { removeItemFromCart, cartItems, cartCount } = useContext(CartContext);
 
   const removeItemFromCartHandler = () => removeItemFromCart(cartItems);
   return (

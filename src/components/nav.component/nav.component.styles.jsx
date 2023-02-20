@@ -7,7 +7,6 @@ export const NavLinksContainer = styled.div`
 
   img {
     @media (max-width: 755px) {
-      border: 2px solid black;
     }
   }
 `;
@@ -40,7 +39,12 @@ export const NavLiContainer = styled.div`
       display: none;
       border-bottom: none;
     }
+
+    align-items: center;
+    justify-content: space-around;
     border-bottom: none;
+    gap: 0px;
+    margin-left: auto;
   }
 `;
 
@@ -50,6 +54,11 @@ export const NavImgContainer = styled.div`
   margin-left: auto;
   position: relative;
 
+  @media (max-width: 775px) {
+    img {
+      margin: 0 !important;
+    }
+  }
   img {
     margin: 0 32px;
     border: 2px solid transparent;
@@ -58,18 +67,20 @@ export const NavImgContainer = styled.div`
         border: 2px solid #ff7e1b;
         border-radius: 50%;
       }
+      @media (max-width: 775px) {
+        width: 24px;
+      }
     }
     &:nth-child(2) {
       &:hover {
         filter: brightness(0.4);
       }
+      @media (max-width: 775px) {
+        width: 20px;
+        margin-right: 22px !important;
+      }
     }
   }
-  @media (max-width: 755px) {
-    img {
-      
-    }
-
 `;
 
 export const ItemCount = styled.span`
@@ -82,4 +93,8 @@ export const ItemCount = styled.span`
   font-weight: 700;
   font-size: 10px;
   z-index: 9999;
+
+  @media (max-width: 775px) {
+    transform: translate(90%, -60%);
+  }
 `;

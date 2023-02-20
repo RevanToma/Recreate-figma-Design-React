@@ -1,9 +1,8 @@
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  height: 25px;
+  top: 28px;
 }
 
 .bm-burger-bars {
@@ -17,6 +16,7 @@
 .bm-cross-button {
   height: 24px;
   width: 24px;
+  left: 10%;
 }
 
 .bm-cross {
@@ -27,6 +27,7 @@
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  left: 0;
 }
 
 .bm-menu {
