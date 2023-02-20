@@ -4,7 +4,7 @@ This is a project created for school to recreate a Figma design. It is built wit
 # Show Case desktop / mobile
 
 <img src="./src/screens-showcase/desktop.PNG" alt="desktop screen"/>
-<img src="./src/screens-showcase/mobilescreen.PNG" alt="mobile screen"/>
+<img src="./src/screens-showcase/mobilescreen.png" alt="mobile screen"/>
 
 # Author
 
