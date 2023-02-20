@@ -3,6 +3,6 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "Recreate-figma-Design-React",
+  base: "/Recreate-figma-Design-React/",
   plugins: [react()],
 });
