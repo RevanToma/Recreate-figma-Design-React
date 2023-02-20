@@ -4,6 +4,12 @@ export const NavLinksContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+
+  img {
+    @media (max-width: 755px) {
+      border: 2px solid black;
+    }
+  }
 `;
 
 export const NavLiContainer = styled.div`
@@ -28,6 +34,14 @@ export const NavLiContainer = styled.div`
       border-bottom: 4px #ff7e1b solid;
     }
   }
+
+  @media (max-width: 755px) {
+    li {
+      display: none;
+      border-bottom: none;
+    }
+    border-bottom: none;
+  }
 `;
 
 export const NavImgContainer = styled.div`
@@ -51,6 +65,11 @@ export const NavImgContainer = styled.div`
       }
     }
   }
+  @media (max-width: 755px) {
+    img {
+      
+    }
+
 `;
 
 export const ItemCount = styled.span`

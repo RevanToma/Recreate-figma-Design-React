@@ -4,7 +4,6 @@ export const ProductImgContainer = styled.div`
   img {
     margin: 5px 15px;
     cursor: pointer;
-
     &:hover {
       opacity: 0.3;
     }
@@ -19,4 +18,5 @@ export const Overlay = styled.div`
   width: 100%;
   background: black;
   opacity: 0.8;
+  z-index: 9999;
 `;
