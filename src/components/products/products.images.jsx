@@ -10,12 +10,17 @@ const ProductsImages = ({ productData }) => {
   const [windowSize, setWindowSize] = useState(0);
 
   useEffect(() => {
-    setWindowSize(window.screen.width);
+    setWindowSize(window.innerWidth);
+    console.log("mounted");
 
-    window.addEventListener("resize", () => {
-      setWindowSize(window.screen.width);
-    });
-    return window.removeEventListener("resize", () => {});
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+      console.log("unmounted");
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
