@@ -15,6 +15,7 @@ const ProductsImages = ({ productData }) => {
     window.addEventListener("resize", () => {
       setWindowSize(window.screen.width);
     });
+    return window.removeEventListener("resize", () => {});
   }, []);
 
   return (
